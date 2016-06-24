@@ -1,0 +1,21 @@
+{
+  "name": "UI-page",
+  "homepage": "https://github.com/egurtovenko/UI-page",
+  "authors": [
+    "egurtovenko <gurtovenko030984@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap-sass": "^3.3.6"
+  }
+}
