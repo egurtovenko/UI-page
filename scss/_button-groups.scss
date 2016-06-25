@@ -1,0 +1,21 @@
+.btn-group {
+	> .btn + .btn {
+		border-left: 1px solid rgba(0, 0, 0, 0.15);
+	}
+	> .btn + .dropdown-toggle {
+		border-left: 1px solid rgba(0, 0, 0, 0.15);
+	}
+}
+
+.btn-group-vertical {
+	> .btn + .btn {
+		border-top: 1px solid rgba(0, 0, 0, 0.15);
+	}
+}
+
+.btn {
+	.caret-right {
+		margin-left: 10px;
+	}
+}
+
