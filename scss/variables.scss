@@ -52,7 +52,7 @@ $font-family-base:        $font-family-sans-serif;
 
 $font-size-base:          14px;
 $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+$font-size-small:         10px;
 
 $font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
 $font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
@@ -777,19 +777,19 @@ $well-border:                 darken($well-bg, 7%);
 //
 //##
 
-$badge-color:                 #fff;
+$badge-color:                 #333;
 //** Linked badge text color on hover
 $badge-link-hover-color:      #fff;
-$badge-bg:                    $gray-light;
+$badge-bg:                    #fff;
 
 //** Badge text color in active nav link
 $badge-active-color:          $link-color;
 //** Badge background color in active nav link
 $badge-active-bg:             #fff;
 
-$badge-font-weight:           bold;
+$badge-font-weight:           400;
 $badge-line-height:           1;
-$badge-border-radius:         10px;
+$badge-border-radius:         12px;
 
 
 //== Breadcrumbs

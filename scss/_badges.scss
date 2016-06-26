@@ -1,0 +1,32 @@
+$badge-color-second:	#fff;
+$badge-primary: 		$brand-primary;
+$badge-info:			$brand-info;
+$badge-warning:			$brand-warning;
+$badge-danger:			$brand-danger;
+$badge-normal:			$brand-normal;
+$badge-success:			$brand-success;
+
+.badge {
+	padding: 5px 8px;
+	text-transform: uppercase;
+	border: 1px solid $badge-normal;
+}
+
+.badge-normal {
+	@include badge-variant($badge-color-second, $badge-normal, $badge-normal);
+}
+.badge-primary {
+	@include badge-variant($badge-color-second, $badge-primary, $badge-primary);
+}
+.badge-info {
+	@include badge-variant($badge-color-second, $badge-info, $badge-info);
+}
+.badge-warning {
+	@include badge-variant($badge-color-second, $badge-warning, $badge-warning);
+}
+.badge-danger {
+	@include badge-variant($badge-color-second, $badge-danger, $badge-danger);
+}
+.badge-success {
+	@include badge-variant($badge-color-second, $badge-success, $badge-success);
+}
