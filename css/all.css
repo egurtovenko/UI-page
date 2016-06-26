@@ -296,8 +296,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("fontsglyphicons-halflings-regular.eot");
-  src: url("fontsglyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fontsglyphicons-halflings-regular.woff2") format("woff2"), url("fontsglyphicons-halflings-regular.woff") format("woff"), url("fontsglyphicons-halflings-regular.ttf") format("truetype"), url("fontsglyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("fonts/bootstrapglyphicons-halflings-regular.eot");
+  src: url("fonts/bootstrapglyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/bootstrapglyphicons-halflings-regular.woff2") format("woff2"), url("fonts/bootstrapglyphicons-halflings-regular.woff") format("woff"), url("fonts/bootstrapglyphicons-halflings-regular.ttf") format("truetype"), url("fonts/bootstrapglyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -4030,26 +4030,26 @@ input[type="button"].btn-block {
 }
 
 .btn-normal {
-  color: #333;
+  color: #fff;
   background-color: #aab2bd;
   border-color: #aab2bd;
 }
 
 .btn-normal:focus, .btn-normal.focus {
-  color: #333;
+  color: #fff;
   background-color: #8d98a7;
   border-color: #657182;
 }
 
 .btn-normal:hover {
-  color: #333;
+  color: #fff;
   background-color: #c7ccd3;
   border-color: #c7ccd3;
 }
 
 .btn-normal:active, .btn-normal.active,
 .open > .btn-normal.dropdown-toggle {
-  color: #333;
+  color: #fff;
   background-color: #c7ccd3;
   border-color: #ccd1d8;
 }
@@ -4058,7 +4058,7 @@ input[type="button"].btn-block {
 .open > .btn-normal.dropdown-toggle:hover,
 .open > .btn-normal.dropdown-toggle:focus,
 .open > .btn-normal.dropdown-toggle.focus {
-  color: #333;
+  color: #fff;
   background-color: #dbdee3;
   border-color: #f2f3f5;
 }
@@ -4078,7 +4078,7 @@ fieldset[disabled] .btn-normal.focus {
 
 .btn-normal .badge {
   color: #aab2bd;
-  background-color: #333;
+  background-color: #fff;
 }
 
 .fade {
@@ -5630,11 +5630,11 @@ a.label:hover, a.label:focus {
 }
 
 .label-default {
-  background-color: #777777;
+  background-color: #fff;
 }
 
 .label-default[href]:hover, .label-default[href]:focus {
-  background-color: #5e5e5e;
+  background-color: #e6e6e6;
 }
 
 .label-primary {
@@ -5675,6 +5675,28 @@ a.label:hover, a.label:focus {
 
 .label-danger[href]:hover, .label-danger[href]:focus {
   background-color: #c42737;
+}
+
+.label {
+  padding: 8px 8px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.label-default {
+  color: #333;
+}
+
+.label-normal {
+  background-color: #aab2bd;
+}
+
+.label-normal[href]:hover, .label-normal[href]:focus {
+  background-color: #8d98a7;
+}
+
+.label-default {
+  border: 1px solid #aab2bd;
 }
 
 .badge {

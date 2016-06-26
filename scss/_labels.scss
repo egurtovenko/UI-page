@@ -1,0 +1,17 @@
+$border-label-radius:    3px;
+$label-normal-border: #aab2bd !default;
+
+.label {
+	padding: 8px 8px;
+	text-transform: uppercase;
+	border-radius: $border-label-radius;
+	&-default {
+		color: #333;
+	}
+	&-normal {
+		@include label-variant($label-normal-bg);
+	}
+	&-default {
+		border: 1px solid $label-normal-border;
+	}
+}

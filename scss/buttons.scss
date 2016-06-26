@@ -1,6 +1,7 @@
 $btn-font-size: 12px !default;
 $btn-normal-bg: #aab2bd !default;
 $btn-normal-border: #aab2bd !default;
+$btn-normal-color: #fff;
 
 
 .btn {
@@ -9,5 +10,5 @@ $btn-normal-border: #aab2bd !default;
 }
 
 .btn-normal {
-	@include button-variant($btn-default-color, $btn-normal-bg, $btn-normal-border);
+	@include button-variant($btn-normal-color, $btn-normal-bg, $btn-normal-border);
 }
