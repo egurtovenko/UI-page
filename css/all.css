@@ -7045,7 +7045,7 @@ button.close {
   padding: 3px 8px;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: #434a54;
   border-radius: 4px;
 }
 
@@ -7062,7 +7062,7 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #434a54;
 }
 
 .tooltip.top-left .tooltip-arrow {
@@ -7070,7 +7070,7 @@ button.close {
   right: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #434a54;
 }
 
 .tooltip.top-right .tooltip-arrow {
@@ -7078,7 +7078,7 @@ button.close {
   left: 5px;
   margin-bottom: -5px;
   border-width: 5px 5px 0;
-  border-top-color: #000;
+  border-top-color: #434a54;
 }
 
 .tooltip.right .tooltip-arrow {
@@ -7086,7 +7086,7 @@ button.close {
   left: 0;
   margin-top: -5px;
   border-width: 5px 5px 5px 0;
-  border-right-color: #000;
+  border-right-color: #434a54;
 }
 
 .tooltip.left .tooltip-arrow {
@@ -7094,7 +7094,7 @@ button.close {
   right: 0;
   margin-top: -5px;
   border-width: 5px 0 5px 5px;
-  border-left-color: #000;
+  border-left-color: #434a54;
 }
 
 .tooltip.bottom .tooltip-arrow {
@@ -7102,7 +7102,7 @@ button.close {
   left: 50%;
   margin-left: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #434a54;
 }
 
 .tooltip.bottom-left .tooltip-arrow {
@@ -7110,7 +7110,7 @@ button.close {
   right: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #434a54;
 }
 
 .tooltip.bottom-right .tooltip-arrow {
@@ -7118,7 +7118,15 @@ button.close {
   left: 5px;
   margin-top: -5px;
   border-width: 0 5px 5px;
-  border-bottom-color: #000;
+  border-bottom-color: #434a54;
+}
+
+.tooltip {
+  font-size: 12px;
+}
+
+.tooltip-inner {
+  padding: 4px 8px;
 }
 
 .popover {
@@ -7818,4 +7826,9 @@ body {
 
 .block {
   padding: 25px 0;
+}
+
+.tooltip-holder {
+  padding: 25px 100px;
+  display: inline-block;
 }

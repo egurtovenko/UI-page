@@ -283,7 +283,43 @@
 		<span class="badge badge-danger">danger</span>
 		<span class="badge badge-success">success</span>
 	</div>
+	<h3>Tooltips</h3>
+	<div class="block">
+		<div class="tooltip-holder">
+			<a href="#" data-toggle="tooltip" title="Tooltip on top">top</a>
+			<div class="tooltip top" role="tooltip">
+				<div class="tooltip-arrow"></div>
+				<div class="tooltip-inner">Tooltip on top</div>
+			</div>
+		</div>
+		<div class="tooltip-holder">
+			<a href="#" data-toggle="tooltip" title="Tooltip on left" data-placement="left">left</a>
+			<div class="tooltip left" role="tooltip">
+				<div class="tooltip-arrow"></div>
+				<div class="tooltip-inner">Tooltip on left</div>
+			</div>
+		</div>
+		<div class="tooltip-holder">
+			<a href="#" data-toggle="tooltip" title="Tooltip on bottom" data-placement="bottom">bottom</a>
+			<div class="tooltip bottom" role="tooltip">
+				<div class="tooltip-arrow"></div>
+				<div class="tooltip-inner">Tooltip on bottom</div>
+			</div>
+		</div>
+		<div class="tooltip-holder">
+			<a href="#" data-toggle="tooltip" title="Tooltip on right" data-placement="right">bottom</a>
+			<div class="tooltip right" role="tooltip">
+				<div class="tooltip-arrow"></div>
+				<div class="tooltip-inner">Tooltip on right</div>
+			</div>
+		</div>
+	</div>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
-	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>	
+	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+	<script>
+		$(function () {
+  			$('[data-toggle="tooltip"]').tooltip('show')
+		})
+	</script>	
 </body>
 </html>

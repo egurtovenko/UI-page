@@ -55,6 +55,7 @@
 // Components w/ JavaScript
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/modals";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+@import "_tooltip.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 
@@ -69,3 +70,7 @@ body {
 	padding: 25px 0;
 }
 
+.tooltip-holder {
+	padding: 25px 100px;
+	display: inline-block;
+}
