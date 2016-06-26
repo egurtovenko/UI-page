@@ -1,0 +1,15 @@
+$border-radius-pill: 15px;
+
+.form-control {
+	&-pill {
+		border-radius: $border-radius-pill;
+	}
+	&[disabled] {
+		border: none;
+	}
+	> option {
+		display: block;
+		padding: 5px 30px;
+		background: $brand-primary;
+	}
+}
