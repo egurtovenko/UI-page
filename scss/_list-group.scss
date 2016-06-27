@@ -1,0 +1,13 @@
+a.square-item {
+    &.active,
+    &.active:hover,
+    &.active:focus {
+      width: 102%;    
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+}
+
+.list-group-item:last-child {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+}
