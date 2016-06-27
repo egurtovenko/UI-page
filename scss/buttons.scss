@@ -8,6 +8,9 @@ $btn-normal-color: #fff;
 	text-transform: uppercase;
 	font-size: $btn-font-size;
 }
+.btn-pill {
+	border-right: 20px;
+}
 
 .btn-normal {
 	@include button-variant($btn-normal-color, $btn-normal-bg, $btn-normal-border);

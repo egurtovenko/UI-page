@@ -307,7 +307,7 @@
 			</div>
 		</div>
 		<div class="tooltip-holder">
-			<a href="#" data-toggle="tooltip" title="Tooltip on right" data-placement="right">bottom</a>
+			<a href="#" data-toggle="tooltip" title="Tooltip on right" data-placement="right">right</a>
 			<div class="tooltip right" role="tooltip">
 				<div class="tooltip-arrow"></div>
 				<div class="tooltip-inner">Tooltip on right</div>
@@ -348,8 +348,8 @@
 			</div>
 			<div class="input-group">
 				<div class="input-group-btn">
-					<button type="button" class="btn btn-danger">Action</button>
-					<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button type="button" class="btn btn-danger btn-sm">Action</button>
+					<button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<span class="caret"></span>
 					<span class="sr-only">Toggle Dropdown</span>
 					<ul class="dropdown-menu">
@@ -361,19 +361,44 @@
 				</div>
 				<input type="text" class="form-control">
 				<div class="input-group-btn">
-					<button type="button" class="btn btn-primary">Action</button>
-					<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<button type="button" class="btn btn-primary btn-sm">Action</button>
+					<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<span class="caret"></span>
 					<span class="sr-only">Toggle Dropdown</span>
 					<ul class="dropdown-menu">
 						<li><a href="#">Action1</a></li>
 						<li><a href="#">Action2</a></li>
 						<li><a href="#">Action3</a></li>
+						<li><a href="#">Separated link</a></li>
 						<li><a href="#">Action4</a></li>
 					</ul>
 				</div>
 			</div>
+			<div class="input-group">
+				<input type="text" class="form-control form-control-pill">
+				<span class="input-group-btn">
+				<button class="btn btn-pill btn-primary btn-sm" type="button">Search</button>
+				</span>
+			</div>
 		</form>
+	</div>
+	<h3>Alerts</h3>
+	<div class="block">
+		<div class="alert alert-warning alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span></button>
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+		</div>
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span></button>
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+		</div>
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span></button>
+				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+		</div>
 	</div>
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>

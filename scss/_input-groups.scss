@@ -1,0 +1,11 @@
+.input-group-btn {
+	> .btn + .btn {
+		border-left: 1px solid rgba(0, 0, 0, 0.15);
+	}
+	> .btn + .dropdown-toggle {
+		border-left: 1px solid rgba(0, 0, 0, 0.15);
+	}
+	> .btn-pill {
+		border-radius: 20px;
+	}
+}
