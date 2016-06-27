@@ -1,0 +1,4 @@
+$progress-bar-primary-bg:			$brand-primary;
+.progress-bar-primary {
+  @include progress-bar-variant($progress-bar-primary-bg);
+}
