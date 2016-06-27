@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="css/all.css">
 </head>
 <body>
-	<div class="container">
+<div class="container">
 	<h3>Buttons</h3>
 		<div class="block">
 			<a href="#" class="btn btn-normal btn-lg">normal</a>
@@ -263,25 +263,31 @@
 			<button type="button" class="btn btn-success btn-sm">4</button>
 		</div>
 	</div>
-	<h3>Labels</h3>
-	<div class="block">
-		<span class="label label-normal">Normal</span>
-		<span class="label label-default">Default</span>
-		<span class="label label-primary">Primary</span>
-		<span class="label label-info">Info</span>
-		<span class="label label-warning">Warning</span>
-		<span class="label label-danger">Danger</span>
-		<span class="label label-success">Success</span>
-	</div>
-	<h3>Badges</h3>
-	<div class="block">
-		<span class="badge badge-normal">normal</span>
-		<span class="badge">default</span>
-		<span class="badge badge-primary">primary</span>
-		<span class="badge badge-info">info</span>
-		<span class="badge badge-warning">warning</span>
-		<span class="badge badge-danger">danger</span>
-		<span class="badge badge-success">success</span>
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Labels</h3>
+			<div class="block">
+				<span class="label label-normal">Normal</span>
+				<span class="label label-default">Default</span>
+				<span class="label label-primary">Primary</span>
+				<span class="label label-info">Info</span>
+				<span class="label label-warning">Warning</span>
+				<span class="label label-danger">Danger</span>
+				<span class="label label-success">Success</span>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<h3>Badges</h3>
+			<div class="block">
+				<span class="badge badge-normal">normal</span>
+				<span class="badge">default</span>
+				<span class="badge badge-primary">primary</span>
+				<span class="badge badge-info">info</span>
+				<span class="badge badge-warning">warning</span>
+				<span class="badge badge-danger">danger</span>
+				<span class="badge badge-success">success</span>
+			</div>
+		</div>
 	</div>
 	<h3>Tooltips</h3>
 	<div class="block">
@@ -316,177 +322,202 @@
 	</div>
 	<h3>Forms</h3>
 	<div class="block">
-		<form>
-			<div class="form-group">
-				<input type="text" class="form-control" placeholder="Text input">
+		<div class="row">
+			<div class="col-sm-6">
+				<form>
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Text input">
+					</div>
+					<div class="form-group">
+						<textarea class="form-control" rows="4"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control form-control-pill">
+					</div>
+					<div class="form-group has-success">
+						<label class="control-label" for="inputSuccess1">Input with success</label>
+						<input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+					</div>
+					<div class="form-group has-error">
+						<label class="control-label" for="inputError1">Input with danger</label>
+						<input type="text" class="form-control" id="inputError1">
+					</div>
+				</form>
 			</div>
-			<div class="form-group">
-				<input class="form-control" id="disabledInput" type="text" placeholder="Text input" disabled>
+			<div class="col-sm-6">
+				<form>
+					<div class="form-group">
+						<input class="form-control" id="disabledInput" type="text" placeholder="Text input" disabled>
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">$</span>
+						<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+						<span class="input-group-addon">.00</span>
+					</div>
+					<div class="input-group">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-danger btn-sm">Action</button>
+							<button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action1</a></li>
+								<li><a href="#">Action2</a></li>
+								<li><a href="#">Action3</a></li>
+								<li><a href="#">Action4</a></li>
+							</ul>
+						</div>
+						<input type="text" class="form-control">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-primary btn-sm">Action</button>
+							<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span></button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action1</a></li>
+								<li><a href="#">Action2</a></li>
+								<li><a href="#">Action3</a></li>
+								<li><a href="#">Action4</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="input-group">
+						<input type="text" class="form-control form-control-pill">
+						<span class="input-group-btn">
+						<button class="btn btn-pill btn-primary btn-sm" type="button">Search</button>
+						</span>
+					</div>
+					<div class="form-group has-warning">
+						<label class="control-label" for="inputWarning1">Input with warning</label>
+						<input type="text" class="form-control" id="inputWarning1">
+					</div>
+				</form>
 			</div>
-			<div class="form-group">
-				<textarea class="form-control" rows="4"></textarea>
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control form-control-pill">
-			</div>
-			<div class="form-group has-success">
-				<label class="control-label" for="inputSuccess1">Input with success</label>
-				<input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
-			</div>
-			<div class="form-group has-warning">
-				<label class="control-label" for="inputWarning1">Input with warning</label>
-				<input type="text" class="form-control" id="inputWarning1">
-			</div>
-			<div class="form-group has-error">
-				<label class="control-label" for="inputError1">Input with danger</label>
-				<input type="text" class="form-control" id="inputError1">
-			</div>
-			<div class="input-group">
-				<span class="input-group-addon">$</span>
-				<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-				<span class="input-group-addon">.00</span>
-			</div>
-			<div class="input-group">
-				<div class="input-group-btn">
-					<button type="button" class="btn btn-danger btn-sm">Action</button>
-					<button type="button" class="btn btn-danger btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<span class="caret"></span>
-					<span class="sr-only">Toggle Dropdown</span>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action1</a></li>
-						<li><a href="#">Action2</a></li>
-						<li><a href="#">Action3</a></li>
-						<li><a href="#">Action4</a></li>
-					</ul>
-				</div>
-				<input type="text" class="form-control">
-				<div class="input-group-btn">
-					<button type="button" class="btn btn-primary btn-sm">Action</button>
-					<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<span class="caret"></span>
-					<span class="sr-only">Toggle Dropdown</span>
-					<ul class="dropdown-menu">
-						<li><a href="#">Action1</a></li>
-						<li><a href="#">Action2</a></li>
-						<li><a href="#">Action3</a></li>
-						<li><a href="#">Separated link</a></li>
-						<li><a href="#">Action4</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="input-group">
-				<input type="text" class="form-control form-control-pill">
-				<span class="input-group-btn">
-				<button class="btn btn-pill btn-primary btn-sm" type="button">Search</button>
-				</span>
-			</div>
-		</form>
+		</div>
 	</div>
 	<h3>Alerts</h3>
 	<div class="block">
-		<div class="alert alert-warning alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<strong>Warning!</strong> Better check yourself, you're not looking too good.
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<strong>Warning!</strong> Better check yourself, you're not looking too good.
+				</div>
+				<div class="alert alert-success alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="alert alert-danger alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<strong>Oh snap!</strong> Change a few things up and try submitting again.
+				</div>
+				<div class="alert alert-primary alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<strong>Well done!</strong> You successfully read this important alert message.
+				</div>
+			</div>
 		</div>
-		<div class="alert alert-success alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
-		</div>
-		<div class="alert alert-danger alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<strong>Oh snap!</strong> Change a few things up and try submitting again.
-		</div>
-		<div class="alert alert-primary alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<strong>Well done!</strong> You successfully read this important alert message.
-		</div>
-		<div class="alert alert-warning alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<h4>Warning!</h4>
-				<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-				<a href="#" class="btn btn-warning btn-sm">Take this action</a>
-				<a href="#">Or do this</a>
-		</div>
-		<div class="alert alert-success alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<h4>Heads up!</h4>
-				<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-				<a href="#" class="btn btn-success btn-sm">Take this action</a>
-				<a href="#">Or do this</a>
-		</div>
-		<div class="alert alert-danger alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<h4>Oh snap!</h4>
-				<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-				<a href="#" class="btn btn-danger btn-sm">Take this action</a>
-				<a href="#">Or do this</a>
-		</div>
-		<div class="alert alert-primary alert-dismissible" role="alert">
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-				<span aria-hidden="true">&times;</span></button>
-				<h4>Well done!</h4>
-				<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
-				<a href="#" class="btn btn-primary btn-sm">Take this action</a>
-				<a href="#">Or do this</a>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<h4>Warning!</h4>
+						<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+						<a href="#" class="btn btn-warning btn-sm">Take this action</a>
+						<a href="#">Or do this</a>
+				</div>
+				<div class="alert alert-success alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<h4>Heads up!</h4>
+						<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+						<a href="#" class="btn btn-success btn-sm">Take this action</a>
+						<a href="#">Or do this</a>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="alert alert-danger alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<h4>Oh snap!</h4>
+						<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+						<a href="#" class="btn btn-danger btn-sm">Take this action</a>
+						<a href="#">Or do this</a>
+				</div>
+				<div class="alert alert-primary alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span></button>
+						<h4>Well done!</h4>
+						<p>Change this and that and try again. <a href="#" class="alert-link">Duis mollis</a>, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+						<a href="#" class="btn btn-primary btn-sm">Take this action</a>
+						<a href="#">Or do this</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<h3>Progresses</h3>
 	<div class="block">
-		<div class="progress">
-			<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-			<span class="sr-only">60% Complete (success)</span>
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (success)</span>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-			<span class="sr-only">40% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-			<span class="sr-only">20% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-			<span class="sr-only">60% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-			<span class="sr-only">80% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-			<span class="sr-only">60% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-			<span class="sr-only">40% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-			<span class="sr-only">20% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-			<span class="sr-only">60% Complete (success)</span>
-			</div>
-		</div>
-		<div class="progress">
-			<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-			<span class="sr-only">80% Complete (success)</span>
+			<div class="col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (success)</span>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+					<span class="sr-only">80% Complete (success)</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -526,70 +557,77 @@
 		<div class="well well-sm">Look, I'm in a well!</div>
 	</div>
 	<h3>Panels</h3>
-	<div class="block">
-		<div class="panel panel-default">
-			<div class="panel-heading">Panel title</div>
-			<div class="panel-body">Panel content</div>
-		</div>
-		<div class="panel panel-primary">
-			<div class="panel-heading">Panel title</div>
-			<div class="panel-body">Panel content</div>
-		</div>
-		<div class="panel panel-success">
-			<div class="panel-heading">Panel title</div>
-			<div class="panel-body">Panel content</div>
-		</div>
-		<div class="panel panel-warning">
-			<div class="panel-heading">Panel title</div>
-			<div class="panel-body">Panel content</div>
-		</div>
-		<div class="panel panel-info">
-			<div class="panel-heading">Panel title</div>
-			<div class="panel-body">Panel content</div>
-		</div>
-		<div class="panel panel-danger">
-			<div class="panel-heading">Panel title</div>
-			<div class="panel-body">Panel content</div>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">Panel heading</div>
-			<div class="panel-body">Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
-			<ul class="list-group">
-				<li class="list-group-item">Cras justo odio</li>
-				<li class="list-group-item">Dapibus ac facilisis in</li>
-				<li class="list-group-item">Morbi leo risus</li>
-				<li class="list-group-item">Porta ac consectetur ac</li>
-				<li class="list-group-item">Vestibulum at eros</li>
-			</ul>
-		</div>
-		<div class="panel panel-default">
-			<div class="panel-heading">Panel heading</div>
-			<table class="table">
-				<tr>
-					<th>#</th>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Username</th>
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Mark</td>
-					<td>Otto</td>
-					<td>@mdo</td>
-				</tr>
-				<tr>
-					<td>2</td>
-					<td>Jacob</td>
-					<td>Thornton</td>
-					<td>@fat</td>
-				</tr>
-				<tr>
-					<td>3</td>
-					<td>Larry</td>
-					<td>the Bird</td>
-					<td>@twitter</td>
-				</tr>
-			</table>
+		<div class="block">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Panel title</div>
+						<div class="panel-body">Panel content</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Panel title</div>
+						<div class="panel-body">Panel content</div>
+					</div>
+					<div class="panel panel-success">
+						<div class="panel-heading">Panel title</div>
+						<div class="panel-body">Panel content</div>
+					</div>
+					<div class="panel panel-warning">
+						<div class="panel-heading">Panel title</div>
+						<div class="panel-body">Panel content</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">Panel title</div>
+						<div class="panel-body">Panel content</div>
+					</div>
+					<div class="panel panel-danger">
+						<div class="panel-heading">Panel title</div>
+						<div class="panel-body">Panel content</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="panel panel-default">
+						<div class="panel-heading">Panel heading</div>
+						<div class="panel-body">Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+						<ul class="list-group">
+							<li class="list-group-item">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">Panel heading</div>
+						<table class="table">
+							<tr>
+								<th>#</th>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Username</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>@mdo</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>@fat</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Larry</td>
+								<td>the Bird</td>
+								<td>@twitter</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
 		</div>
 		<h3>Media object</h3>
 		<div class="block">
@@ -637,7 +675,7 @@
 				<li class="media">
 					<div class="media-body">
 						<h4 class="media-heading">Media heading</h4>
-						<p>12 Apr, 2013 at 12:30</p>
+						<p>12 Apr, 2013 at 12:50</p>
 						<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
 					</div>
 					<div class="media-right">
@@ -646,7 +684,18 @@
 				</li>
 			</ul>
 		</div>
+	<h3>Lists</h3>
+	<div class="block">
+		<ul class="list-group">
+			<li class="list-group-item"><span class="badge badge-normal">14</span>Cras justo odio</li>
+			<li class="list-group-item"><span class="badge">91</span>Cras justo odio</li>
+			<li class="list-group-item"><span class="badge badge-primary">38</span>Cras justo odio</li>
+			<li class="list-group-item"><span class="badge badge-success">56</span>Cras justo odio</li>
+			<li class="list-group-item"><span class="badge badge-warning">20</span>Cras justo odio</li>
+			<li class="list-group-item"><span class="badge badge-warning">99+</span>Cras justo odio</li>
+		</ul>
 	</div>
+</div>	
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
 	<script>
