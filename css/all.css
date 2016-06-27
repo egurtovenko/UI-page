@@ -6212,6 +6212,14 @@ a.thumbnail.active {
   list-style: none;
 }
 
+.media {
+  color: #aab2bd;
+}
+
+.media h4 {
+  color: #333333;
+}
+
 .list-group {
   margin-bottom: 20px;
   padding-left: 0;
