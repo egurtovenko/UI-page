@@ -5950,16 +5950,16 @@ a.thumbnail.active {
 
 .alert-success {
   background-color: #b9df90;
-  border-color: #8cc152;
-  color: #8cc152;
+  border-color: #b9df90;
+  color: #3c763d;
 }
 
 .alert-success hr {
-  border-top-color: #7fb842;
+  border-top-color: #add97c;
 }
 
 .alert-success .alert-link {
-  color: #72a53b;
+  color: #2b542c;
 }
 
 .alert-info {
@@ -5978,30 +5978,71 @@ a.thumbnail.active {
 
 .alert-warning {
   background-color: #ffdd87;
-  border-color: #f6bb42;
-  color: #f6bb42;
+  border-color: #ffdd87;
+  color: #8a6d3b;
 }
 
 .alert-warning hr {
-  border-top-color: #f5b22a;
+  border-top-color: #ffd66e;
 }
 
 .alert-warning .alert-link {
-  color: #f4a911;
+  color: #66512c;
 }
 
 .alert-danger {
   background-color: #f2838f;
-  border-color: #da4453;
-  color: #da4453;
+  border-color: #f2838f;
+  color: #a94442;
 }
 
 .alert-danger hr {
-  border-top-color: #d62f3f;
+  border-top-color: #f06c7a;
 }
 
 .alert-danger .alert-link {
-  color: #c42737;
+  color: #843534;
+}
+
+.alert h4 {
+  font-weight: 700;
+}
+
+.alert > a {
+  margin-left: 10px;
+  color: inherit;
+}
+
+.alert > .btn {
+  display: inline-block;
+  text-transform: none;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 0;
+}
+
+.alert .alert-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.alert > p,
+.alert > ul {
+  margin-bottom: 10px;
+}
+
+.alert-primary {
+  background-color: #7cd1ef;
+  border-color: #7cd1ef;
+  color: #31708f;
+}
+
+.alert-primary hr {
+  border-top-color: #65c9ec;
+}
+
+.alert-primary .alert-link {
+  color: #245269;
 }
 
 @-webkit-keyframes progress-bar-stripes {

@@ -633,21 +633,25 @@ $alert-padding:               15px;
 $alert-border-radius:         $border-radius-base;
 $alert-link-font-weight:      bold;
 
-$alert-success-bg:            $state-success-bg;
-$alert-success-text:          $state-success-text;
-$alert-success-border:        $state-success-border;
+$alert-success-bg:            #b9df90;
+$alert-success-text:          #3c763d;
+$alert-success-border:        $alert-success-bg;
 
 $alert-info-bg:               $state-info-bg;
 $alert-info-text:             $state-info-text;
 $alert-info-border:           $state-info-border;
 
-$alert-warning-bg:            $state-warning-bg;
-$alert-warning-text:          $state-warning-text;
-$alert-warning-border:        $state-warning-border;
+$alert-warning-bg:            #ffdd87;
+$alert-warning-text:          #8a6d3b;
+$alert-warning-border:        $alert-warning-bg;
 
-$alert-danger-bg:             $state-danger-bg;
-$alert-danger-text:           $state-danger-text;
-$alert-danger-border:         $state-danger-border;
+$alert-danger-bg:             #f2838f;
+$alert-danger-text:           #a94442;
+$alert-danger-border:         $alert-danger-bg;
+
+$alert-primary-bg:			  #7cd1ef;
+$alert-primary-text:		  #31708f;
+$alert-primary-border:		  $alert-primary-bg;
 
 
 //== Progress bars

@@ -1,0 +1,28 @@
+.alert {
+  h4 {
+	font-weight: 700;
+  }
+  > a {
+  	margin-left: 10px;
+  	color: inherit;
+  }
+  	> .btn {
+		display: inline-block;
+		text-transform: none;
+		font-size: $font-size-base;
+		color: #fff;
+		margin-left: 0;
+	}
+  .alert-link {
+    font-weight: $alert-link-font-weight;
+    text-decoration: underline;
+  }
+  > p,
+  > ul {
+    margin-bottom: 10px;
+  }
+}
+
+.alert-primary {
+  @include alert-variant($alert-primary-bg, $alert-primary-border, $alert-primary-text);
+}
