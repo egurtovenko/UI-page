@@ -1,0 +1,13 @@
+.thumbnail {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16);
+	> img {
+		display: block;
+		width: 100%;
+	}
+	.caption {
+		> p .btn {
+			text-transform: none;
+			font-size: $font-size-base;
+		}
+	}
+}
