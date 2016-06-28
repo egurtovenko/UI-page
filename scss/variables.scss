@@ -81,8 +81,7 @@ $headings-color:          inherit;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: "fonts/bootstrap";
-
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/");
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
@@ -454,19 +453,19 @@ $nav-pills-active-link-hover-color:         $component-active-color;
 //
 //##
 
-$pagination-color:                     $link-color;
+$pagination-color:                     $text-color;
 $pagination-bg:                        #fff;
 $pagination-border:                    #ddd;
 
 $pagination-hover-color:               $link-hover-color;
-$pagination-hover-bg:                  $gray-lighter;
-$pagination-hover-border:              #ddd;
+$pagination-hover-bg:                  lighten($brand-success, 10%);
+$pagination-hover-border:              lighten($brand-success, 10%);
 
 $pagination-active-color:              #fff;
-$pagination-active-bg:                 $brand-primary;
-$pagination-active-border:             $brand-primary;
+$pagination-active-bg:                 $brand-success;
+$pagination-active-border:             $brand-success;
 
-$pagination-disabled-color:            $gray-light;
+$pagination-disabled-color:            #e6e9ed;
 $pagination-disabled-bg:               #fff;
 $pagination-disabled-border:           #ddd;
 
@@ -475,8 +474,8 @@ $pagination-disabled-border:           #ddd;
 //
 //##
 
-$pager-bg:                             $pagination-bg;
-$pager-border:                         $pagination-border;
+$pager-bg:                             $brand-success;
+$pager-border:                         $brand-success;
 $pager-border-radius:                  15px;
 
 $pager-hover-bg:                       $pagination-hover-bg;
@@ -484,7 +483,7 @@ $pager-hover-bg:                       $pagination-hover-bg;
 $pager-active-bg:                      $pagination-active-bg;
 $pager-active-color:                   $pagination-active-color;
 
-$pager-disabled-color:                 $pagination-disabled-color;
+$pager-disabled-color:                 #e6e9ed;
 
 
 //== Jumbotron

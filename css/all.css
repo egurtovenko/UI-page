@@ -296,8 +296,8 @@ th {
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("fonts/bootstrapglyphicons-halflings-regular.eot");
-  src: url("fonts/bootstrapglyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("fonts/bootstrapglyphicons-halflings-regular.woff2") format("woff2"), url("fonts/bootstrapglyphicons-halflings-regular.woff") format("woff"), url("fonts/bootstrapglyphicons-halflings-regular.ttf") format("truetype"), url("fonts/bootstrapglyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
 
 .glyphicon {
@@ -5492,7 +5492,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.42857;
   text-decoration: none;
-  color: #3bafda;
+  color: #333333;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -5516,8 +5516,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > span:focus {
   z-index: 2;
   color: #2084a9;
-  background-color: #eeeeee;
-  border-color: #ddd;
+  background-color: #a5ce78;
+  border-color: #a5ce78;
 }
 
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -5526,8 +5526,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 3;
   color: #fff;
-  background-color: #3bafda;
-  border-color: #3bafda;
+  background-color: #8cc152;
+  border-color: #8cc152;
   cursor: default;
 }
 
@@ -5537,7 +5537,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .disabled > a,
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
-  color: #777777;
+  color: #e6e9ed;
   background-color: #fff;
   border-color: #ddd;
   cursor: not-allowed;
@@ -5581,6 +5581,17 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   border-top-right-radius: 4px;
 }
 
+.pagination > li > a {
+  padding: 10px 15px;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:last-child > a, .pagination > li:last-child > span {
+  background-color: #8cc152;
+  border: 1px solid #8cc152;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .pager {
   padding-left: 0;
   margin: 20px 0;
@@ -5605,15 +5616,15 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager li > span {
   display: inline-block;
   padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #8cc152;
+  border: 1px solid #8cc152;
   border-radius: 15px;
 }
 
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #a5ce78;
 }
 
 .pager .next > a,
@@ -5630,9 +5641,19 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
 .pager .disabled > span {
-  color: #777777;
-  background-color: #fff;
+  color: #e6e9ed;
+  background-color: #8cc152;
   cursor: not-allowed;
+}
+
+.pager li > a, .pager li > span {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.pager li .disabled > a, .pager li .disabled > span {
+  background-color: #fff;
+  border: 1px solid #e6e9ed;
 }
 
 .label {
@@ -8090,9 +8111,8 @@ body {
   padding: 25px 0;
 }
 
-.tooltip-holder {
-  padding: 25px 100px;
-  display: inline-block;
+.block-footer {
+  background-color: #434a54;
 }
 
 .input-group {

@@ -38,7 +38,9 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+@import "_pagination.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+@import "_pager.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/labels";
 @import "_labels.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/badges";
@@ -72,16 +74,16 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
+@import "_footers.scss";
+
 body {
 	background-color: #f1f2f6;
 }
 .block {
 	padding: 25px 0;
-}
-
-.tooltip-holder {
-	padding: 25px 100px;
-	display: inline-block;
+	&-footer {
+		background-color: #434a54;
+	}
 }
 
 .input-group {

@@ -1,0 +1,15 @@
+.pagination {
+	> li {
+		> a {
+			padding: $padding-small-vertical $padding-small-horizontal;
+		}
+		&:first-child, &:last-child {
+			> a, > span {
+				background-color: $brand-success;
+				border: 1px solid $brand-success;
+				text-transform: uppercase;
+				color: #fff;
+			}
+		}
+	}
+}

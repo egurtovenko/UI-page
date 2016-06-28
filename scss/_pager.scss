@@ -1,0 +1,14 @@
+.pager {
+	li {
+		> a, > span { 
+			color: #fff;
+			text-transform: uppercase;
+	}
+	.disabled {
+		> a, > span {
+			background-color: #fff;
+			border: 1px solid $pager-disabled-color;
+		}
+	}
+}
+}
