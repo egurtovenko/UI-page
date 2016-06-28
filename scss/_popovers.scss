@@ -1,0 +1,12 @@
+.popover {
+	@include box-shadow(0 3px 5px rgba(0, 0, 0, 0.24)); 
+}
+
+.popover-content {
+	color: #fff;
+}
+
+.popover-title {
+	color: #aab2bd;
+	border-bottom: none;
+}

@@ -68,6 +68,7 @@
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
 @import "_tooltip.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+@import "_popovers.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
@@ -81,8 +82,9 @@ body {
 }
 .block {
 	padding: 25px 0;
-	&-footer {
-		background-color: #434a54;
+	&-flex {
+		display: flex;
+		justify-content: space-around;
 	}
 }
 

@@ -1,4 +1,38 @@
 .footer {
-	display: flex;
-	justify-content: space-around;
+	padding: 40px 0;
+	background-color: #434a54;
+	@include clearfix;
+	.logo-holder {
+		float: left;
+		width: 20%;
+		padding: 0 20px;
+	}
+	.list-holder {
+		float: left;
+		width: 20%;
+		padding: 0 20px;
+		.list-title {
+			display: block;
+			margin-top: 0;
+			margin-bottom: 15px;
+			color: #e6e9ed;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 700;
+		}
+		.footer-list {
+			list-style: none;
+			padding: 0;
+			&-item {
+				padding: 5px 0;
+				> a {
+					color: $brand-normal;
+				}
+			}
+		}
+	}
+}
+
+.post-footer {
+	color: $brand-normal;
 }

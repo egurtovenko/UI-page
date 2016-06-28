@@ -8,7 +8,7 @@
 <body>
 <div class="container">
 	<h3>Buttons</h3>
-		<div class="block">
+		<div class="block block-flex">
 			<a href="#" class="btn btn-normal btn-lg">normal</a>
 			<a href="#" class="btn btn-default btn-lg">normal</a>
 			<a href="#" class="btn btn-primary btn-lg">normal</a>
@@ -17,7 +17,7 @@
 			<a href="#" class="btn btn-danger btn-lg">normal</a>
 			<a href="#" class="btn btn-success btn-lg">normal</a>
 		</div>
-		<div class="block">
+		<div class="block block-flex">
 			<div class="btn-group">
 				<button type="button" class="btn btn-normal btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">normal<span class="caret caret-right"></span></button>
 				<ul class="dropdown-menu">
@@ -89,7 +89,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block block-flex">
 			<div class="btn-group">
 				<button type="button" class="btn btn-normal btn-sm">normal</button>
 				<button type="button" class="btn btn-normal btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -182,7 +182,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="block">
+		<div class="block block-flex">
 			<div class="btn-group" role="group">
 				<button type="button" class="btn btn-normal btn-sm"><span class="glyphicon glyphicon-align-left"></span></button>
 				<button type="button" class="btn btn-normal btn-sm"><span class="glyphicon glyphicon-align-center"></span></button>
@@ -219,7 +219,7 @@
 				<button type="button" class="btn btn-success btn-sm"><span class="glyphicon glyphicon-align-right"></span></button>
 			</div>
 	</div>
-	<div class="block">
+	<div class="block block-flex">
 		<div class="btn-group-vertical" role="group">
 			<button type="button" class="btn btn-normal btn-sm"><span class="glyphicon glyphicon-home"></span></button>
 			<button type="button" class="btn btn-normal btn-sm"><span class="glyphicon glyphicon-user"></span></button>
@@ -310,16 +310,16 @@
 	<div class="block">
 		<div class="row">
 			<div class="col-sm-3">
-				<button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover at bottom</button>
+				<button type="button" class="btn btn-info" data-container="body" data-toggle="popover" title="Popover bottom" data-placement="bottom" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover at bottom</button>
 			</div>
 			<div class="col-sm-3">
-				<button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" title="Popover title" data-placement="left" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover at bottom</button>
+				<button type="button" class="btn btn-info" data-container="body" data-toggle="popover" title="Popover left" data-placement="left" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover on left</button>
 			</div>
 			<div class="col-sm-3">
-				<button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" title="Popover title" data-placement="right" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover at bottom</button>
+				<button type="button" class="btn btn-info" data-container="body" data-toggle="popover" title="Popover right" data-placement="right" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover on right</button>
 			</div>
 			<div class="col-sm-3">
-				<button type="button" class="btn btn-warning" data-container="body" data-toggle="popover" title="Popover title" data-placement="top" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover at bottom</button>
+				<button type="button" class="btn btn-info" data-container="body" data-toggle="popover" title="Popover top" data-placement="top" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">I am popover on top</button>
 			</div>
 		</div>
 	</div>
@@ -560,7 +560,7 @@
 				</div>
 			</div>
 			<div class="col-sm-6">
-				<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click me! I am a modal</button>
+				<button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Click me! I am a modal</button>
 				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 					<div class="modal-dialog" role="document">
 						<div class="modal-content">
@@ -805,52 +805,48 @@
 			</div>
 		</div>
 	</div>
-	<div class="block block-footer">
-		<div class="footer">
+	<div class="block">
+		<div class="footer clearfix">
 			<div class="logo-holder">
 				<img src="images/logo.png" alt="">
 			</div>
 			<div class="list-holder">
-				<h3>title</h3>
+				<span class="list-title">portfolio</span>
 				<ul class="footer-list">
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
+					<li class="footer-list-item"><a href="">Web Design</a></li>
+					<li class="footer-list-item"><a href="">Branding & Identity</a></li>
+					<li class="footer-list-item"><a href="">Mobile Design</a></li>
+					<li class="footer-list-item"><a href="">Print</a></li>
+					<li class="footer-list-item"><a href="">User Interface</a></li>
 				</ul>
 			</div>
 			<div class="list-holder">
-				<h3>title</h3>
+				<span class="list-title">about</span>
 				<ul class="footer-list">
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
+					<li class="footer-list-item"><a href="">The Company</a></li>
+					<li class="footer-list-item"><a href="">History</a></li>
+					<li class="footer-list-item"><a href="">Vision</a></li>
 				</ul>
 			</div>
 			<div class="list-holder">
-				<h3>title</h3>
+				<span class="list-title">gallery</span>
 				<ul class="footer-list">
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
+					<li class="footer-list-item"><a href="">Flickr</a></li>
+					<li class="footer-list-item"><a href="">Picasa</a></li>
+					<li class="footer-list-item"><a href="">iStockPhoto</a></li>
+					<li class="footer-list-item"><a href="">PhotoDune</a></li>
 				</ul>
 			</div>
 			<div class="list-holder">
-				<h3>title</h3>
+				<span class="list-title">contact</span>
 				<ul class="footer-list">
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
-					<li class="footer-list-item"><a href="">lorem</a></li>
+					<li class="footer-list-item"><a href="">Basic Info</a></li>
+					<li class="footer-list-item"><a href="">Map</a></li>
+					<li class="footer-list-item"><a href="">Conctact Form</a></li>
 				</ul>
 			</div>
 		</div>
+		<div class="post-footer text-center">Copyright © 2014 Flathemes.All rights reserved.</div>
 	</div>
 </div>	
 	<script src="bower_components/jquery/dist/jquery.js"></script>
