@@ -8283,6 +8283,98 @@ button.close {
   color: #ee7f6d;
 }
 
+.pricing .price-item {
+  min-width: 250px;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+}
+
+.pricing .price-item .price-header {
+  padding: 20px;
+  color: #fff;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.pricing .price-item .price-header h2 {
+  margin: 0;
+}
+
+.pricing .price-item .price-body {
+  padding: 20px;
+  color: #434a54;
+}
+
+.pricing .price-item .price-body h4 {
+  margin: 0;
+  line-height: 27px;
+}
+
+.pricing .price-item .price-body .description {
+  padding-top: 20px;
+}
+
+.pricing .price-item .price-body .description span {
+  display: block;
+  margin: 10px 0;
+}
+
+.pricing .price-item .price-footer {
+  padding: 20px 0;
+  background-color: #e6e9ed;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.pricing .price-item.active {
+  top: 10px;
+  margin-left: -40px;
+  margin-right: -40px;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+}
+
+.pricing .price-item.active .price-header {
+  padding: 30px;
+}
+
+.pricing .price-primary .price-header {
+  background-color: #3bafda;
+}
+
+.pricing .price-primary .price-body {
+  background-color: #d1ecf6;
+}
+
+.pricing .price-primary .price-body .description {
+  border-top: 1px solid #91d2ea;
+}
+
+.pricing .price-success .price-header {
+  background-color: #8cc152;
+}
+
+.pricing .price-success .price-body {
+  background-color: #e3f0d5;
+}
+
+.pricing .price-success .price-body .description {
+  border-top: 1px solid #bedc9d;
+}
+
+.pricing .price-warning .price-header {
+  background-color: #f6bb42;
+}
+
+.pricing .price-warning .price-body {
+  background-color: #fef8ec;
+}
+
+.pricing .price-warning .price-body .description {
+  border-top: 1px solid #fbdea3;
+}
+
 body {
   background-color: #f1f2f6;
 }

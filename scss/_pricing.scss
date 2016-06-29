@@ -1,0 +1,81 @@
+.pricing {
+	.price-item {
+		min-width: 250px;
+		border-radius: $border-radius-base;
+		display: inline-block;
+		position: relative;
+		.price-header {
+			padding: 20px;
+			color: #fff;
+			border-top-left-radius: $border-radius-base;
+			border-top-right-radius: $border-radius-base;
+			& h2 {
+				margin: 0;
+			}
+		}
+		.price-body {
+			padding: 20px;
+			color: #434a54;
+			& h4 {
+				margin: 0;
+				line-height: 27px;
+			}
+			.description {
+				padding-top: 20px;
+				& span {
+					display: block;
+					margin: 10px 0;
+				}
+			}
+		}
+		.price-footer {
+			padding: 20px 0;
+			background-color: #e6e9ed;
+			border-bottom-left-radius: $border-radius-base;
+			border-bottom-right-radius: $border-radius-base;
+		}
+		&.active {
+			top: 10px;
+			margin-left: -40px;
+			margin-right: -40px;
+			z-index: 1;
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
+			.price-header {
+				padding: 30px;
+			}
+		}
+	}
+	.price-primary {
+		.price-header {
+			background-color: $brand-primary;
+		}
+		.price-body {
+			background-color: lighten($brand-primary, 35%);
+			.description {
+				border-top: 1px solid lighten($brand-primary, 20%);
+			}
+		}
+	}
+	.price-success {
+		.price-header {
+			background-color: $brand-success;
+		}
+		.price-body {
+			background-color: lighten($brand-success, 35%);
+			.description {
+				border-top: 1px solid lighten($brand-success, 20%);
+			}
+		}
+	}
+	.price-warning {
+		.price-header {
+			background-color: $brand-warning;
+		}
+		.price-body {
+			background-color: lighten($brand-warning, 35%);
+			.description {
+				border-top: 1px solid lighten($brand-warning, 20%);
+			}
+		}
+	}
+}
