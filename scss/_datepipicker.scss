@@ -17,7 +17,7 @@ $datepicker-new-date:			$date-color;
 		text-align: center;
 	}
 	&-header {
-		border-bottom: 1px solid lighten($date-color, 10%);
+		border-bottom: 1px solid $date-color;
 		padding-bottom: 15px;
 		.prev span,
 		.next span {
