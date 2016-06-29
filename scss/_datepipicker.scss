@@ -1,0 +1,102 @@
+$datepicker-bg:					#fd9883;
+$datepicker-border-radius:		$border-radius-base;
+$datepicker-text-color:			#fff;
+$date-color:					#ee7f6d;
+$datepicker-old-date:			$date-color;
+$datepicker-new-date:			$date-color;
+
+.datepicker {
+	background-color: $datepicker-bg;
+	border-radius: $datepicker-border-radius;
+	padding: 20px;
+	color: $datepicker-text-color;
+	box-shadow: 0 1px 2px rgba(132, 132, 132, 0.75);
+	.arrow {
+		float: left;
+		width: 14%;
+		text-align: center;
+	}
+	&-header {
+		border-bottom: 1px solid lighten($date-color, 10%);
+		padding-bottom: 15px;
+		.prev span,
+		.next span {
+			position: relative;
+			border: 1px solid $datepicker-text-color;
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			display: inline-block;
+			cursor: pointer;
+			&:hover {
+				border: 1px solid $date-color;
+			}
+		}
+		.prev span:before,
+		.next span:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 0;
+			height: 0;
+			border-style: solid;
+		}
+		.prev span:before {
+			border-width: 6px 6px 6px 0;
+			border-color: transparent $datepicker-text-color transparent transparent;
+			right: 45%;
+		}
+		.prev span:hover:before {
+			border-color: transparent $date-color transparent transparent;
+		}
+		.next span:before {
+			border-width: 6px 0 6px 6px;
+			border-color: transparent transparent transparent $datepicker-text-color;
+			left: 45%;
+		}
+		.next span:hover:before {
+			border-color: transparent transparent transparent $date-color;
+		}
+		.date {
+			float: left;
+			width: 70%;
+			text-align: center;
+			padding-top: 8px;
+		}
+	}
+	&-week {
+		padding-top: 15px;
+		.item {
+			float: left;
+			width: 14%;
+			text-align: center;
+			padding-bottom: 15px;
+		}
+	}
+	&-body {
+		.item {
+			text-align: center;
+			height: 34px;
+			float: left;
+			width: 14%;
+			& span {
+				line-height: 34px;
+				width: 34px;
+				height: 34px;
+				border-radius: 50%;
+			}
+			&:hover span,
+			&.active span {
+				display: inline-block;
+				background-color: $datepicker-text-color;
+				color: $date-color;
+				cursor: pointer;
+			}
+		}
+		.next-month,
+		.prev-month {
+			color: $datepicker-old-date;
+		}
+	}
+}

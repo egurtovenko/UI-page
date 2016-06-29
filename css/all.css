@@ -8167,6 +8167,120 @@ button.close {
 
 .post-footer {
   color: #aab2bd;
+  background: #434a54;
+}
+
+.datepicker {
+  background-color: #fd9883;
+  border-radius: 4px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(132, 132, 132, 0.75);
+}
+
+.datepicker .arrow {
+  float: left;
+  width: 14%;
+  text-align: center;
+}
+
+.datepicker-header {
+  border-bottom: 1px solid #f3a79b;
+  padding-bottom: 15px;
+}
+
+.datepicker-header .prev span,
+.datepicker-header .next span {
+  position: relative;
+  border: 1px solid #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.datepicker-header .prev span:hover,
+.datepicker-header .next span:hover {
+  border: 1px solid #ee7f6d;
+}
+
+.datepicker-header .prev span:before,
+.datepicker-header .next span:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.datepicker-header .prev span:before {
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #fff transparent transparent;
+  right: 45%;
+}
+
+.datepicker-header .prev span:hover:before {
+  border-color: transparent #ee7f6d transparent transparent;
+}
+
+.datepicker-header .next span:before {
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #fff;
+  left: 45%;
+}
+
+.datepicker-header .next span:hover:before {
+  border-color: transparent transparent transparent #ee7f6d;
+}
+
+.datepicker-header .date {
+  float: left;
+  width: 70%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.datepicker-week {
+  padding-top: 15px;
+}
+
+.datepicker-week .item {
+  float: left;
+  width: 14%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.datepicker-body .item {
+  text-align: center;
+  height: 34px;
+  float: left;
+  width: 14%;
+}
+
+.datepicker-body .item span {
+  line-height: 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.datepicker-body .item:hover span,
+.datepicker-body .item.active span {
+  display: inline-block;
+  background-color: #fff;
+  color: #ee7f6d;
+  cursor: pointer;
+}
+
+.datepicker-body .next-month,
+.datepicker-body .prev-month {
+  color: #ee7f6d;
 }
 
 body {
