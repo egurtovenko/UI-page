@@ -1,0 +1,15 @@
+.jumbotron {
+	&-card img {
+		width: 100%;
+		display: block;
+	}
+	&-content {
+		padding: 30px 20px;
+		h1 {
+			font-size: ceil(($font-size-base * 1.7));
+		}
+		h2 {
+			font-size: ceil(($font-size-base * 1.25));
+		}
+	}
+}

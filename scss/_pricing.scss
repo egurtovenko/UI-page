@@ -33,6 +33,10 @@
 			background-color: #e6e9ed;
 			border-bottom-left-radius: $border-radius-base;
 			border-bottom-right-radius: $border-radius-base;
+			.btn {
+				text-transform: none;
+				font-size: $font-size-base;
+			}
 		}
 		&.active {
 			top: 10px;
